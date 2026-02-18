@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Solicitud de Préstamo Estudiantil</title>
+    </head>
+    <body>
+        <h1>Formulario de Solicitud de Préstamo Estudiantil</h1>
+        <h2>Complete todos los campos para procesar su solicitud</h2>
+        
+        <form action="#" method="post">
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <br><br>
+            
+            <label for="email">Dirección de correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+
+            <label for="telefono">Número de teléfono:</label>
+            <input type="text" id="telefono" name="telefono" required>
+            <br><br>
+            
+            <label for="direccion">Dirección actual:</label>
+            <input type="text" id="direccion" name="direccion" required>
+            <br><br>
+
+            <label for="ciudad">Ciudad:</label>
+            <input type="text" id="ciudad" name="ciudad" required>
+            <br><br>
+            
+            <label for="estado">Estado:</label>
+            <select id="estado" name="estado" required>
+                <option value="">Seleccione un estado</option>
+                <option value="Olancho">Olancho</option>
+                <option value="San Pedro Sula">San Pedro Sula</option>
+                <option value="Siguatepeque">Siguatepeque</option>
+                <option value="Copan">Copan</option>
+                <option value="El Paraiso">El Paraiso</option>
+                <option value="Valle">Valle</option>
+                <option value="Francisco Morazán">Francisco Morazan</option>
+                <option value="Atlantida">Atlantida</option>
+                <option value="Colon">Colon</option>
+                <option value="La Paz">La Paz</option>
+            </select>
+            <br><br>
+            
+            <label for="codigo_postal">Código postal:</label>
+            <input type="text" id="codigo_postal" name="codigo_postal" required>
+            <br><br>
+            
+            <fieldset>
+                <legend>Nivel de educación actual:</legend>
+                
+                <input type="radio" id="preparatoria" name="nivel_educacion" value="Preparatoria" required>
+                <label for="preparatoria">Preparatoria</label>
+                <br>
+                
+                <input type="radio" id="licenciatura" name="nivel_educacion" value="Licenciatura">
+                <label for="licenciatura">Licenciatura</label>
+                <br>
+                
+                <input type="radio" id="maestria" name="nivel_educacion" value="Maestría">
+                <label for="maestria">Maestría</label>
+                <br>
+                
+                <input type="radio" id="doctorado" name="nivel_educacion" value="Doctorado">
+                <label for="doctorado">Doctorado</label>
+            </fieldset>
+            <br>
+            
+            <fieldset>
+                <legend>Programa de estudio:</legend>
+                
+                <input type="radio" id="computacion" name="programa_estudio" value="Ciencias de la Computación" required>
+                <label for="computacion">Ciencias de la Computación</label>
+                <br>
+                
+                <input type="radio" id="ingenieria" name="programa_estudio" value="Ingeniería">
+                <label for="ingenieria">Ingeniería</label>
+                <br>
+                
+                <input type="radio" id="economia" name="programa_estudio" value="Economía">
+                <label for="economia">Economía</label>
+                <br>
+                
+                <input type="radio" id="artes" name="programa_estudio" value="Artes">
+                <label for="artes">Artes</label>
+                <br>
+                
+                <input type="radio" id="otro" name="programa_estudio" value="Otro">
+                <label for="otro">Otro</label>
+            </fieldset>
+            <br>
+            
+            <label for="monto">Monto del préstamo solicitado (en Lempiras):</label>
+            <input type="text" id="monto" name="monto" required>
+            <br><br>
+            
+            <label for="razon">Razón para solicitar el préstamo:</label>
+            <br>
+            <textarea id="razon" name="razon" rows="5" cols="50" required></textarea>
+            <br><br>
+            
+            <button type="submit">Enviar Solicitud</button>
+        </form>
+    </body>
+</html>
