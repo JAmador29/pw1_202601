@@ -2,8 +2,20 @@
 <html>
     <head>
         <title> Introduccion CSS</title>
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="Styles/intro.css">
+        <script>
+            document.addEventListener("DOMContentLoaded", ()=>{
+                const hb = document.querySelector(".hamburguer-buttons");
+                const nav = document.querySelector("header nav");
+                hb.addEventListener("click", (e)=>{
+                    e.preventDefault();
+                    e.stopPropagation();
+                    nav.classList.toggle("hidden");
+                });
+            });
+        </script>
     </head>
     <body>
         <header>
@@ -25,6 +37,19 @@
             </nav>
         </header>
         <main>
+            <section class="hero" id="hero">
+                <diV>
+                    <picture>
+                        <source srcset="https://picsum.photos/id/80/1300/720" media = "(min-width: 1025px)"/>    
+                        <source srcset="https://picsum.photos/id/80/1025/640" media = "(min-width: 720px)"/>    
+                        <img src = "https://picsum.photos/id/80/480/480" alt="Hero Panel Image">
+                    </picture>
+                </diV>
+                <div class = "action-panel q2">
+                    <h2>Agenda una cIta para la demo!!!</h2>
+                    <a href>Agendar</a>
+                </div>
+            </section>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed accusantium velit eius! Nisi corrupti perspiciatis repudiandae earum ducimus enim rem voluptas quos repellendus, tenetur iste, reiciendis ullam ab voluptatibus expedita.</p>
         </main>
         <footer>
