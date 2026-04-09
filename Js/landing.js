@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", ()=>{
     let miCarusel = new Carousel("caruselPrincipal");
     miCarusel.init();
@@ -16,6 +17,8 @@ class Carousel {
         this.direction = 1;
     }
     init() {
+        // Generar Botones
+        this.generateNavigationUI();
         this.tick();
     }
     tick(){
@@ -56,29 +59,19 @@ class Carousel {
 
         btnLeft.textContent = "<";
         btnRight.textContent = ">";
-        const resetTick = () => {
-            clearTimeout(this.tickerId); 
-            this.tick();                 
-        };
 
-        btnRight.addEventListener("click", (e) => {
+        btnRight.addEventListener("click", (e)=>{
             e.preventDefault();
             e.stopPropagation();
-            this.direction = 1;
-            this.moveNext();
-            resetTick(); 
-        });
-
-        btnLeft.addEventListener("click", (e) => {
-            e.preventDefault();
-            e.stopPropagation();
-            this.direction = -1;
-            this.moveNext();
-            resetTick(); 
+            // Para mover al siguiente
+            alert("Moviendo A");
+            // Tip: se debe cancelar el timeout y
+            // volver a correr el tick;
         });
 
         this.carouselHolder.appendChild(btnLeft);
         this.carouselHolder.appendChild(btnRight);
     }
+
 
 }
