@@ -1,3 +1,7 @@
 #ignorar archivos compromidos
 *.zip
 *.rar
+*.pdf
+*.docx
+*.xlsx
+*.pptx
