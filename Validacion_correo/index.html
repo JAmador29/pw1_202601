@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador de correo electronico</title>
+    <style>
+        .error 
+        {
+            border-color: red;
+            outline-color: red;
+        }
+        .error-text
+        {
+            font-weight: bold;
+            color: #760000;
+            font-size: 0.75rem;
+        }
+    </style>
+
+    <script src="validador.js"></script>
+</head>
+<body>
+    <section>
+            <form action="landingpage.html" method="get" id="contactForm">
+                <fieldset>
+                    <div id="txtNombreDiv">
+                        <label for="txtNombre">Nombre Completo</label>
+                        <input type="text" name="txtNombre" id="txtNombre" placeholder="Nombre Completo" />
+                    </div>
+                    <div id="txtCorreoDiv">
+                        <label for="txtCorreoElectronico">Correo Electrónico</label>
+                        <input type="email" name="txtCorreoElectronico" id="txtCorreoElectronico"
+                            placeholder="Tu Correo Electrónico" />
+                    </div>
+                </fieldset>
+                <div>
+                    <button type="submit" name="btnEnviar" id="btnEnviar">Enviar -> </button>
+                </div>
+            </form>
+        </section>
+</body>
+</html>

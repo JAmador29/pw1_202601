@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Validación Pro</title>
+    <script src="validaciones.js"></script>
+</head>
+<body>
+
+    <form id="registroForm">
+        <div class="input-group">
+            <label>Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre">
+            <span id="errorNombre" class="error"></span>
+        </div>
+
+        <div class="input-group">
+            <label>Correo Electrónico:</label><br>
+            <input type="text" id="email" name="email">
+            <span id="errorEmail" class="error"></span>
+        </div>
+
+        <div class="input-group">
+            <label>Contraseña (mín. 8 caracteres):</label><br>
+            <input type="password" id="password" name="password">
+            <span id="errorPass" class="error"></span>
+        </div>
+
+        <button type="submit">Registrar</button>
+    </form>
+
+</body>
+</html>
